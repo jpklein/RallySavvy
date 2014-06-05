@@ -1,15 +1,28 @@
 {
-  "name": "angular-seed",
-  "description": "A starter project for AngularJS",
+  "name": "rally-savvy",
+  "description": "An AngularJS application to collect and display custom Rally reports",
   "version": "0.0.0",
-  "homepage": "https://github.com/angular/angular-seed",
+  "homepage": "https://github.com/jpklein/RallySavvy",
   "license": "MIT",
   "private": true,
+  "main": [
+    "/dist/rally-savvy.min.js",
+    "/dist/rally-savvy.min.css"
+  ],
+  "ignore": [
+    "**/.*",
+    "package.json",
+    "klei.json",
+    "gulpfile.js",
+    "node_modules",
+    "bower_components",
+    "src"
+  ],
   "dependencies": {
-    "angular": "1.2.x",
-    "angular-route": "1.2.x",
-    "angular-loader": "1.2.x",
-    "angular-mocks": "~1.2.x",
-    "html5-boilerplate": "~4.3.0"
+    "angular": "~1.2.14",
+    "angular-route": "~1.2.14"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.2.14"
   }
 }
