@@ -1,17 +1,17 @@
 
 angular.module('rallySavvy', [
   'ngRoute',
-  'rallySavvy.todo',
+  'rallySavvy.defect',
   'rally-savvy-templates'
 ])
 .config(function ($routeProvider) {
   'use strict';
   $routeProvider
-    .when('/todo', {
-      controller: 'TodoCtrl',
-      templateUrl: '/rally-savvy/todo/todo.html'
+    .when('/defects/:defectId', {
+      controller: 'DefectCtrl',
+      templateUrl: '/rally-savvy/defect/defect-detail.html'
     })
     .otherwise({
-      redirectTo: '/todo'
+      redirectTo: '/defects/18603203206'
     });
 });
